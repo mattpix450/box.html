@@ -1,0 +1,97 @@
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+.Navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #c51f1f; /* Burger Red */
+  position: relative;
+  z-index: 999;
+}
+
+/* Left Section */
+.left-Column {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.icon i {
+  font-size: 1.4rem;
+}
+
+.Contact-Time .phone {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.Contact-Time .time {
+  font-size: 0.85rem;
+  color: #fbbf24;
+}
+
+/* Center Logo + Links */
+.Center {
+  text-align: center;
+}
+
+.Logo-Picture img {
+  height: 65px;
+}
+
+.Links {
+  display: flex;
+  gap: 30px;
+  margin-top: 5px;
+}
+
+.Nav-Link a {
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.Nav-Link a:hover {
+  color: #fbbf24;
+}
+
+/* Order Button */
+.Order-Now a {
+  background: #fbbf24;
+  color: #c51f1f;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.Order-Now a:hover {
+  background: white;
+  color: #c51f1f;
+}
+
+/* =========================
+   RESPONSIVE NAV
+========================= */
+
+@media (max-width: 992px) {
+  .Navigation {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .Links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .Order-Now {
+    margin-top: 10px;
+  }
+}
